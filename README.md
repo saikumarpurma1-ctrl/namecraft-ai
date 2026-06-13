@@ -1,1 +1,0 @@
-# namecraft-ai
