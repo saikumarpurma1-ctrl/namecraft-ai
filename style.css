@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial,sans-serif;
+
+    background:
+    linear-gradient(
+    135deg,
+    #09091f,
+    #111827,
+    #1f2937);
+
+    min-height:100vh;
+
+    color:white;
+}
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 50px;
+}
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:bold;
+}
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:25px;
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+.hero h1{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+}
+
+.hero span{
+
+    background:
+    linear-gradient(
+    90deg,
+    #60a5fa,
+    #a855f7);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+
+    color:#cbd5e1;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+    line-height:1.7;
+}
+
+.generator-box{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+}
+
+select,
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+
+    font-size:16px;
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #6366f1,
+    #d946ef);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+}
+
+.results-section{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:40px auto;
+}
+
+.results-section h2{
+
+    margin-bottom:20px;
+}
+
+#results{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:15px;
+}
+
+.name-card{
+
+    background:
+    rgba(255,255,255,0.05);
+
+    padding:18px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.copy-btn{
+
+    background:#6366f1;
+
+    width:auto;
+
+    padding:8px 15px;
+
+    font-size:14px;
+}
+.features{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(200px,1fr));
+
+gap:20px;
+
+width:90%;
+
+max-width:1200px;
+
+margin:50px auto;
+}
+
+.feature-card{
+
+background:rgba(255,255,255,.05);
+
+padding:30px;
+
+border-radius:15px;
+
+text-align:center;
+
+font-size:18px;
+}
