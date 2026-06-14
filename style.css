@@ -236,3 +236,208 @@ footer a:hover{
 
     color:white;
 }
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(140px,1fr));
+
+    gap:15px;
+
+    margin-bottom:25px;
+}
+
+.category-card{
+
+    background:
+    rgba(255,255,255,0.05);
+
+    padding:15px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.category-card:hover{
+
+    transform:translateY(-5px);
+
+    background:
+    rgba(255,255,255,0.1);
+}
+
+.category-card.active{
+
+    background:
+    linear-gradient(
+    90deg,
+    #6366f1,
+    #d946ef);
+
+    color:white;
+
+    font-weight:bold;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:15px;
+    margin:20px 0;
+}
+
+.category-card{
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+    cursor:pointer;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+}
+
+.category-card.active{
+    background:linear-gradient(90deg,#6366f1,#d946ef);
+    color:white;
+}
+
+#keyword{
+    width:100%;
+    max-width:500px;
+    padding:15px;
+    border-radius:12px;
+    border:none;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.action-buttons{
+
+    display:flex;
+
+    gap:10px;
+}
+
+.fav-btn{
+
+    background:none;
+
+    border:none;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+.favorites-section{
+
+    margin-top:50px;
+}
+
+.name-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:15px 0;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    transition:0.3s;
+}
+
+.name-card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#6366f1;
+}
+
+.name-info h3{
+
+    margin:0;
+
+    font-size:22px;
+}
+
+.name-info small{
+
+    opacity:0.7;
+}
+
+.trending-list{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin:20px 0;
+}
+
+.trending-list span{
+
+padding:10px 20px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,0.08);
+}
+
+.stats{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+}
+
+.stats div{
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.stats h2{
+
+    font-size:32px;
+
+    margin-bottom:8px;
+}

@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NameCraft AI</title>
+<meta name="google-site-verification"
+content="XXXXXXXXXXXXXXXXXX" />
+<title>
+AI Business Name Generator | Startup, YouTube & Brand Names
+</title>
+
+<meta
+name="description"
+content="Generate unique business names, startup names, YouTube channel names and brand names instantly with NameCraft AI.">
+
+<meta
+name="keywords"
+content="business name generator,startup name generator,brand name generator,youtube name generator">
+
+<meta
+name="robots"
+content="index, follow">
 <link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="favicon.ico">
 </head>
 
 <body>
 
 <nav>
-    <div class="logo">🚀 NameCraft AI</div>
+
+    <div class="logo">
+
+    <span class="logo-icon">
+    NC
+    </span>
+
+    <span>
+    NameCraft AI
+    </span>
+
+    </div>
 
     <div class="menu">
         <a href="index.html">Home</a>
@@ -18,6 +48,7 @@
         <a href="pages/privacy.html">Privacy</a>
         <a href="pages/contact.html">Contact</a>
     </div>
+
 </nav>
 
 <section class="hero">
@@ -27,62 +58,121 @@
     </h1>
 
     <p>
-        AI-inspired name generator for businesses, startups,
-        YouTube channels, Instagram pages and more.
+        AI-inspired name generator for businesses,
+        startups, YouTube channels, Instagram pages
+        and more.
     </p>
 
     <div class="generator-box">
 
-    <select id="mode">
+        <select id="mode">
 
-        <option value="brand">
-            🌍 Global Brand Names
-        </option>
+            <option value="brand">
+                🌍 Global Brand Names
+            </option>
 
-        <option value="keyword">
-            🔑 Keyword Based Names
-        </option>
+            <option value="keyword">
+                🔑 Keyword Based Names
+            </option>
 
-    </select>
+        </select>
 
-    <br><br>
+        <br><br>
 
-    <select id="category">
+        <div class="category-grid">
 
-        <option value="Business">
-            🏢 Business
-        </option>
+            <div class="category-card active"
+                 data-category="Business">
+                 🏢 Business
+            </div>
 
-        <option value="Startup">
-            🚀 Startup
-        </option>
+            <div class="category-card"
+                 data-category="Startup">
+                 🚀 Startup
+            </div>
 
-        <option value="YouTube">
-            📺 YouTube
-        </option>
+            <div class="category-card"
+                 data-category="YouTube">
+                 📺 YouTube
+            </div>
 
-        <option value="Instagram">
-            📸 Instagram
-        </option>
+            <div class="category-card"
+                 data-category="Instagram">
+                 📸 Instagram
+            </div>
 
-        <option value="Shop">
-            🛒 Shop
-        </option>
+            <div class="category-card"
+                 data-category="Shop">
+                 🛒 Shop
+            </div>
 
-    </select>
+        </div>
 
-    <br><br>
+        <input
+        type="hidden"
+        id="category"
+        value="Business">
 
-    <input
-    type="text"
-    id="keyword"
-    placeholder="Enter keyword">
+        <br>
 
-    <br><br>
+        <input
+        type="text"
+        id="keyword"
+        placeholder="Enter keyword">
 
-    <button onclick="generateNames()">
-        Generate Names
-    </button>
+        <br><br>
+
+        <button onclick="generateNames()">
+            Generate Names
+        </button>
+
+    </div>
+    <div class="stats">
+
+        <div>
+            <h2>50,000+</h2>
+            <p>Names Generated</p>
+        </div>
+
+        <div>
+            <h2>5+</h2>
+            <p>Categories</p>
+        </div>
+
+        <div>
+            <h2>100%</h2>
+            <p>Free</p>
+        </div>
+
+    </div>
+
+
+</section>
+
+<div class="keyword-suggestions">
+
+<span>Coffee</span>
+<span>Fitness</span>
+<span>Tech</span>
+<span>Fashion</span>
+<span>Travel</span>
+<span>Food</span>
+
+</div>
+
+<section class="trending-section">
+
+<h2>
+🔥 Trending Names
+</h2>
+
+<div class="trending-list">
+
+<span>Novexa</span>
+<span>Velora</span>
+<span>Lumina</span>
+<span>Aureon</span>
+<span>Zenova</span>
 
 </div>
 
@@ -90,36 +180,97 @@
 
 <section class="results-section">
 
-    <h2>Generated Names</h2>
+    <h2>
+        Generated Names
+    </h2>
+
+    <button onclick="copyAllNames()">
+
+    📋 Copy All Names
+
+    </button>
+
+    <br><br>
 
     <div id="results"></div>
 
 </section>
+
+<section class="favorites-section">
+
+    <h2>
+        ❤️ Favorite Names
+    </h2>
+
+    <div id="favorites"></div>
+
+</section>
+
+<section class="seo-links">
+
+<h2>Popular Generators</h2>
+
+<ul>
+
+<li>
+<a href="pages/business-name-generator.html">
+Business Name Generator
+</a>
+</li>
+
+<li>
+<a href="pages/startup-name-generator.html">
+Startup Name Generator
+</a>
+</li>
+
+<li>
+<a href="pages/youtube-name-generator.html">
+YouTube Name Generator
+</a>
+</li>
+
+<li>
+<a href="pages/instagram-name-generator.html">
+Instagram Username Generator
+</a>
+</li>
+
+<li>
+<a href="pages/shop-name-generator.html">
+Shop Name Generator
+</a>
+</li>
+
+</ul>
+
+</section>
+
 <section class="features">
 
     <div class="feature-card">
-    ⚡ Instant Generation
+        ⚡ Instant Generation
     </div>
 
     <div class="feature-card">
-    💎 Brandable Names
+        💎 Brandable Names
     </div>
 
     <div class="feature-card">
-    🚀 Startup Ready
+        🚀 Startup Ready
     </div>
 
     <div class="feature-card">
-    📱 Social Media Names
+        📱 Social Media Names
     </div>
 
 </section>
 
-<script src="script.js"></script>
-
 <footer>
 
-    <p>© 2026 NameCraft AI. All Rights Reserved.</p>
+    <p>
+        © 2026 NameCraft AI. All Rights Reserved.
+    </p>
 
     <div>
         <a href="pages/about.html">About</a> |
@@ -128,6 +279,8 @@
     </div>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
